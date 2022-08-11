@@ -38,7 +38,7 @@ a {
 }
 
 a:visited {
-  color: var(--PLight);
+  color: inherit;
 }
 
 li {
@@ -123,10 +123,10 @@ header {
 
 .nav-enlaces {
   display: none;
+  
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
+  justify-content: start;
+  align-items: flex-start;
   text-align: center;
 }
 
@@ -136,9 +136,17 @@ header {
   display: flex;
 }
 
+.nav__link a{
+  width: 100%;
+}
+
 .nav__link {
   color: var(--PLight);
   font-size: 1.5em;
+  padding: .5em 0;
+  background-color: var(--SDark);
+  width: 100%;
+  margin: .8em 0;
 }
 
 .hidden {
