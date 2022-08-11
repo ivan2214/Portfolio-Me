@@ -1047,6 +1047,8 @@ footer {
 
   /* skills */
 
+
+
   .container-skills {
     display: flex;
     flex-direction: row;
@@ -1054,13 +1056,14 @@ footer {
     align-items: center;
     justify-content: center;
     width: 45%;
-
+    height: 600px;
+    margin: 0;
     gap: 0.5em;
   }
 
   .container-img-skills {
     text-align: center;
-    margin: 0;
+    margin: 1em 0;
     gap: 0.5em;
     display: flex;
     flex-direction: column;
