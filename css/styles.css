@@ -37,7 +37,7 @@ a {
   text-transform: none;
 }
 
-a:visited{
+a:visited {
   color: var(--PLight);
 }
 
@@ -104,49 +104,54 @@ body {
 
 /* HEADER */
 
-
-#nav-container{
- display: flex;
- flex-direction: column;
- align-items: flex-end;
- padding: 1.5em;
- justify-content: center;
- background-color: var(--SDark);
+header {
+  
+  padding: 1em;
+  background-color: var(--Primary);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
 
-.nav-enlaces{
+#nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.nav-enlaces {
   display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: .8em;
+  gap: 2em;
+  text-align: center;
 }
 
-.nav-enlaces-active{
+.nav-enlaces-active {
   height: 100vh;
   width: 100%;
   display: flex;
-
 }
 
-.nav__link{
-  padding: 1em;
+.nav__link {
   color: var(--PLight);
+  font-size: 1.5em;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-.menu-hamburger-close{
+.menu-hamburger-close {
   display: none;
 }
 
-.hidden-close{
+.hidden-close {
   display: block;
 }
-
-
 
 /* fin header y nav */
 
@@ -202,7 +207,7 @@ main {
   width: 100%;
   gap: 0.9em;
   padding: 2.5em 0;
-  border: 1px solid red;
+  margin: 5em 0;
 }
 
 .hero-header {
@@ -409,7 +414,6 @@ footer {
 /* FIN FOOTER */
 
 /* DESKTOP*/
-
 
 @media screen and (min-width: 1000px) {
   #nav-container {
