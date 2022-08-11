@@ -1,5 +1,4 @@
 window.onload = function () {
-  alert("cargada")
   $("#onload").fadeOut();
   $("body").removeClass("hidden");
 };
