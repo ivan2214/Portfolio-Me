@@ -413,6 +413,7 @@ main {
   width: 100%;
   padding: 5em 0;
   background-color: var(--Primary);
+  text-align: center;
 }
 
 .soft-Skilss-text {
@@ -425,6 +426,9 @@ main {
   align-items: center;
   justify-content: center;
   gap: 4em;
+  text-align: center;
+
+  width: 100%;
 }
 
 .container-soft-skills {
@@ -432,20 +436,9 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 2.5em;
   margin: 1.3em 0;
   width: 100%;
-  text-align: center;
-}
-
-.container-img-skills {
-  text-align: center;
-  margin: 0.5em;
-  gap: 0.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -484,8 +477,6 @@ main {
 
 /* contacto */
 
-
-
 #contact {
   display: flex;
   flex-direction: row;
@@ -497,16 +488,15 @@ main {
   padding: 5em 0;
 }
 
-
 .contacto-container {
-  width: 80%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
   background-color: var(--Primary);
-  border-radius: 0.5em;
+  
 }
 
 .contacto {
@@ -515,7 +505,7 @@ main {
   align-items: flex-start;
   justify-content: start;
   margin: 1.5em 0;
-  width: 40%;
+  width: 100%;
 }
 
 .contenido-caja {
@@ -526,22 +516,18 @@ main {
   margin-top: 2.5em;
 }
 
-.fa-solid {
+.contacto-container .fa-solid {
   color: var(--PLight);
-  font-size: 2em;
+  font-size: 1em;
   margin-right: 1em;
 }
 .text-contacto {
-  color: var(--PLight);
+  color: var(--SDark);
   justify-items: start;
-}
-.contacto h3 {
-  color: var(--PLight);
-  font-size: 1.2em;
-}
-.tipo-dato-contacto {
   font-size: 1em;
 }
+
+
 .dato-contacto {
   font-size: 0.8em;
   color: rgb(189, 189, 189);
@@ -554,9 +540,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0;
-
-  width: 40%;
+  margin-top: 2.5em;
+  width: 100%;
 }
 
 .input {
@@ -585,7 +570,6 @@ main {
   justify-content: center;
   gap: 0.5em;
 }
-
 
 /* fin contacto */
 
