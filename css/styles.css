@@ -281,6 +281,8 @@ main {
   transform: translateY(-1px);
 }
 
+/* fin hero */
+
 .header {
   width: 100%;
   text-align: center;
@@ -430,8 +432,8 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
+    
+    
   }
 
   .nav-enlaces {
@@ -445,16 +447,14 @@ footer {
   .nav__link a {
     display: flex;
     font-size: inherit;
-    padding:1em;
+    padding: 1em;
     margin: 0.8em 0;
     background-color: transparent;
     border-radius: 0;
-    
   }
 
   .nav__link:hover {
     background-color: var(--SDark);
-    
   }
 
   .nav__link {
@@ -468,7 +468,67 @@ footer {
     display: flex;
   }
 
+  /* hero */
 
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+    padding: 5em 0;
+    margin: 0;
+    
+  }
 
+  .hero-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+    text-align: left;
+    padding: 0 1.5em;
+    
+  }
+
+  .frontEnd {
+    margin-top: 0.9em;
+    
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 50%;
+    text-align: left;
+    padding: 0 1.5em;
+    
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+    text-align: left;
+    padding: 0 1.5em;
+    
+  }
+
+  .containers-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 5em 0;
+    width: 100%;
+  }
   
+
+  /* fin hero */
 }
