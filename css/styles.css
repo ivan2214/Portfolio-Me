@@ -58,7 +58,7 @@ body {
 
 /* -----------LOAD--------------- */
 
-.hidden-load {
+.hidden {
   overflow: hidden;
 }
 
@@ -149,7 +149,7 @@ header {
   margin: .8em 0;
 }
 
-.hidden {
+.ver {
   display: none;
 }
 
