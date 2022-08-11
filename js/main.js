@@ -1,8 +1,3 @@
-window.onload = function () {
-  $("#onloadSpiner").fadeOut();
-  $("body").removeClass("hidden");
-};
-
 $(".menu-hamburger-open").click(function () {
   $(".nav-enlaces").addClass("nav-enlaces-active");
   $(".menu-hamburger-open").addClass("ver");

@@ -16,12 +16,19 @@
   --SLight: #d7ffd9;
   --Secondary: #a5d6a7;
 
-  /* BACK CARD */
-
   /* color textos */
 
   --TextOnP: #ffffff;
   --TextOnS: #000000;
+
+  /* spinner */
+
+  --size-of-spinner: 50px;
+  --spinner-border-width: 4px;
+  --spinner-color: #08c18a;
+  --circle-color: #8bc34a24;
+  --speed-of-animation: 2s;
+  --scale: 1.3;
 }
 
 /* generales */
@@ -68,26 +75,47 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--Secondary);
+  background-color: var(--Primary);
+  
 }
 
-.lds-dual-ring {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-}
-.lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
+
+
+.spinner {
+  width: var(--size-of-spinner);
+  height: var(--size-of-spinner);
+  background: var(--circle-color);
   border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: var(--Secondary) transparent var(--Secondary) transparent;
-  animation: spinny 1.5s linear infinite;
+  position: relative;
 }
+
+.spinner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  inset: 0;
+  border: var(--spinner-border-width) solid var(--spinner-color);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: spinny var(--speed-of-animation) linear infinite;
+}
+
 @keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(45deg) scale(var(--scale));
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* @keyframes spinny {
   0% {
     transform: rotate(0deg) scale(1);
   }
@@ -99,7 +127,7 @@ body {
   100% {
     transform: rotate(360deg) scale(1);
   }
-}
+} */
 
 /* -----------------FIN LOAD-------------- */
 
@@ -496,7 +524,6 @@ main {
   justify-content: center;
   padding: 0;
   background-color: var(--Primary);
-  
 }
 
 .contacto {
@@ -526,7 +553,6 @@ main {
   justify-items: start;
   font-size: 1em;
 }
-
 
 .dato-contacto {
   font-size: 0.8em;
