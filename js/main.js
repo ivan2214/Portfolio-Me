@@ -1,5 +1,6 @@
 window.onload = function () {
-  $("#onload").fadeOut();
+  $("#onloadSpiner").fadeOut();
+  alert("cargada")
   $("body").removeClass("hidden");
 };
 
