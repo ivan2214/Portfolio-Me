@@ -238,7 +238,7 @@ main {
   justify-content: center;
   width: 100%;
   gap: 4.5em;
-  padding: 5em 0;
+  height: 100vh;
   background-color: var(--Primary);
 }
 
@@ -603,7 +603,6 @@ footer {
   justify-content: center;
   width: 100%;
   background-color: var(--Primary);
-
 }
 
 .copyright-text {
@@ -614,7 +613,7 @@ footer {
   justify-content: center;
 }
 
-.copyright-text h6{
+.copyright-text h6 {
   color: var(--TextOnP);
 }
 
@@ -627,6 +626,27 @@ footer {
   .menu-hamburger-close {
     display: none;
   }
+
+  /* tittles */
+
+  
+.tittle-3 {
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5em;
+  color: var(--TextOnS);
+  font-weight: 600;
+}
+.tittle-4 {
+  color: var(--TextOnS);
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5em;
+  font-weight: 500;
+}
+
 
   /* HEADER NAV */
 
@@ -678,7 +698,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 8em 0;
+    height: 100vh;
     margin: 0;
   }
 
@@ -694,17 +714,19 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: center;
+
     width: 100%;
     text-align: left;
   }
   .tittle {
-    font-size: 4.5em;
+    font-size: 4em;
   }
 
   .frontEnd {
     margin-top: 0.9em;
     font-weight: 600;
+    font-size: 1.5em;
   }
 
   #description {
@@ -724,23 +746,22 @@ footer {
     justify-content: start;
     width: 100%;
     text-align: left;
-    margin-top: 1.5em;
+    margin-top: 2.5em;
   }
 
-  .containers-sections {
+  /* fin hero */
+
+  /* PROJECTS */
+
+  #Projects {
+    background-color: var(--PLight);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5em;
-    padding: 8em 0;
     width: 100%;
-  }
-
-  .proyects {
-    margin: 2.5em 0;
-    padding: 1.5em;
-    width: 30%;
+    gap: 4.5em;
+    padding: 5em 0;
   }
 
   .container {
@@ -748,11 +769,33 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 4em;
     flex-wrap: wrap;
+    gap: 5em;
   }
 
-  /* fin hero */
+  .proyects {
+    margin: 0;
+    padding: 1.5em;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    background-color: var(--Primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+  }
+  .img-projects {
+    border-radius: 1.5em;
+    width: 100%;
+  }
+
+  .proyects a {
+    color: var(--TextOnS);
+    text-align: center;
+    background-color: var(--SDark);
+  }
+
+  /* FIN PROJECTS */
 
   /* soft SKILLLS*/
 
@@ -831,7 +874,8 @@ footer {
     justify-content: center;
     padding: 0;
     background-color: var(--Primary);
-    border-radius: 0.5em;
+    border-radius: 1em;
+    padding: 1.5em 0;
   }
 
   .contacto {

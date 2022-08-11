@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- css -->
-  <link rel="stylesheet" href="./css/styles.css
-      " />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- icons -->
   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
   <title>Document</title>
@@ -69,7 +69,7 @@
         </section>
 
         <section class="buttons">
-          <a href="" class="button">Download CV</a>
+          <a href="" data-aos="fade-right" class="button">Download CV</a>
         </section>
 
       </section>
@@ -80,6 +80,11 @@
 
     </section>
     <section id="description">
+
+      <div class="soft-Skilss-text">
+        <h2 class="tittle-3 tittle-blanco">Sobre<h2 class="tittle-3 tittle-morado">Mi</h2>
+        </h2>
+      </div>
 
       <div class="description-text">
         <p>
@@ -163,27 +168,27 @@
 
       <div class="container-2">
 
-        <div class="trabajador container-soft-skills">
+        <div data-aos="fade-down" class="trabajador container-soft-skills">
           <i class="fa-solid fa-briefcase fa-2xl"></i>
           <p class="description-hard-skills">Trabajador</p>
         </div>
-        <div class="Coooperador container-soft-skills">
+        <div data-aos="fade-down" class="Coooperador container-soft-skills">
           <i class="fa-solid fa-people-group fa-2xl"></i>
           <p>Cooperador</p>
         </div>
-        <div class="Autodidacta container-soft-skills">
+        <div data-aos="fade-down" class="Autodidacta container-soft-skills">
           <i class="fa-solid fa-person-dots-from-line fa-2xl"></i>
           <p>Autodidacta</p>
         </div>
-        <div class="Trabajo-enequipo container-soft-skills">
+        <div data-aos="fade-down" class="Trabajo-enequipo container-soft-skills">
           <i class="fa-solid fa-people-carry-box fa-2xl"></i>
           <p>Trabajo en equipo</p>
         </div>
-        <div class="Espirito-de-superacion container-soft-skills">
+        <div data-aos="fade-up" class="Espirito-de-superacion container-soft-skills">
           <i class="fa-solid fa-chalkboard-user fa-2xl"></i>
           <p>Facilidad para aprender</p>
         </div>
-        <div class="Espirito-de-superacion container-soft-skills">
+        <div data-aos="fade-up" class="Espirito-de-superacion container-soft-skills">
           <i class="fa-solid fa-handshake-simple-slash fa-2xl"></i>
           <p>Social</p>
         </div>
@@ -199,7 +204,7 @@
 
       <div class="container-2">
 
-        <div class="container-skills desarrollo-lenguajes ">
+        <div class="container-skills  desarrollo-lenguajes " data-aos="flip-up">
           <h3 class="tittle-3">Lenguajes</h3>
 
           <div class="container-img-skills container-html">
@@ -217,7 +222,7 @@
             <p class="tittle-4">JavaScript</p>
           </div>
         </div>
-        <div class="container-skills librerias-frameworks">
+        <div class="container-skills librerias-frameworks" data-aos="flip-up">
           <h3 class="tittle-3">Librerias y <br> Frameworks</h3>
           <div class="container-react container-img-skills">
             <img src="./assets/icons8-react-color-hand-drawn/icons8-react-96.svg" alt="">
@@ -240,7 +245,7 @@
             <p class="tittle-4">MaterialIu</p>
           </div>
         </div>
-        <div class="container-skills herramientas">
+        <div class="container-skills herramientas" data-aos="flip-up">
           <h3 class="tittle-3">Herramientas</h3>
           <div class="container-wordpress container-img-skills">
             <img src="./assets/icons8-wordpress-windows-11-color/icons8-wordpress-96.svg" alt="">
@@ -340,6 +345,19 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="./js/main.js"></script>
   <script src="./js/carga.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+
+
+      duration: 1000, // 
+      easing: 'ease', // default easing for AOS animations
+      once: true, // 
+      
+
+
+    });
+  </script>
 </body>
 
 </html>
