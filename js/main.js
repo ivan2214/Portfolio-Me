@@ -1,6 +1,6 @@
 window.onload = function () {
   $("#onload").fadeOut();
-  $("body").removeClass("hidden");
+  $("body").removeClass("hidden-load");
 };
 
 $(".menu-hamburger-open").click(function () {
