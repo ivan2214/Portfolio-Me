@@ -1,8 +1,18 @@
 window.onload = function () {
-  
   $("#onload").fadeOut();
   $("body").removeClass("hidden");
 };
+
+$(".menu-hamburger-open").click(function () {
+  $(".nav-enlaces").addClass("nav-enlaces-active");
+  $(".menu-hamburger-open").addClass("hidden");
+  $(".menu-hamburger-close").addClass("hidden-close");
+});
+$(".menu-hamburger-close").click(function () {
+  $(".nav-enlaces").removeClass("nav-enlaces-active");
+  $(".menu-hamburger-open").removeClass("hidden");
+  $(".menu-hamburger-close").removeClass("hidden-close");
+});
 
 const typed = new Typed(".typed", {
   strings: ["Ivan Bongiovanni"],

@@ -23,6 +23,7 @@
   --TextOn: #000000;
 }
 
+/* generales */
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +34,11 @@
 
 a {
   text-decoration: none;
+  text-transform: none;
+}
+
+a:visited{
+  color: var(--PLight);
 }
 
 li {
@@ -41,17 +47,20 @@ li {
 
 body {
   min-height: 100vh;
+  max-width: 100vw;
   background-color: var(--Secondary);
   color: var(--TextOn);
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
 }
 
+/* fin generales */
+
+/* -----------LOAD--------------- */
+
 .hidden {
   overflow: hidden;
 }
-
-/* -----------LOAD--------------- */
 
 .container-spiner {
   display: flex;
@@ -93,29 +102,57 @@ body {
 
 /* -----------------FIN LOAD-------------- */
 
-header {
+/* HEADER */
+
+
+#nav-container{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ padding: 1.5em;
+ justify-content: center;
+ background-color: var(--SDark);
+}
+
+.nav-enlaces{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .8em;
+}
+
+.nav-enlaces-active{
+  height: 100vh;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--PDark);
+
 }
 
-.header-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background-color: var(--Secondary);
+.nav__link{
+  padding: 1em;
+  color: var(--PLight);
 }
 
-#nav-container {
-  margin-right: 1.5em;
+.hidden{
   display: none;
 }
 
+.menu-hamburger-close{
+  display: none;
+}
+
+.hidden-close{
+  display: block;
+}
+
+
+
+/* fin header y nav */
+
 .tittle-nav {
   margin-left: 1.5em;
+  display: none;
 }
 
 .tittle-morado {
@@ -125,6 +162,27 @@ header {
 .tittle-blanco {
   color: var(--TextOn);
 }
+.tittle {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 600;
+}
+
+.tittle-3 {
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+.tittle-4 {
+  font-size: 1em;
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5em;
+  font-weight: 500;
+}
+
+/* fin tittles */
 
 main {
   display: flex;
@@ -139,11 +197,12 @@ main {
 #hero {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 1.3em;
   width: 100%;
-  margin: 5.5em 0;
+  gap: 0.9em;
+  padding: 2.5em 0;
+  border: 1px solid red;
 }
 
 .hero-header {
@@ -152,24 +211,15 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 1.5em 0;
-}
-
-.tittle {
-  font-size: 2.4em;
   text-align: center;
-  font-weight: 600;
-
-  padding: 0;
 }
 
 .fron {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
-  text-align: center;
-  /* border: 1px solid blue; */
+  justify-content: center;
+
   width: 100%;
   margin-top: 1.2em;
 }
@@ -179,32 +229,18 @@ main {
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   text-align: left;
   letter-spacing: 0.1em;
-  width: 100%;
-  margin-bottom: 1.2em;
-  padding: 1.2em 0;
+  margin: 1.2em 0;
+  padding: 2em;
   font-size: 0.8em;
 }
 
-#redes {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0;
-  width: 100%;
-  padding: 1.2em;
-  gap: 2em;
-}
-
-.img-redes {
-  width: 100%;
-}
-
-.gitHub {
-  color: var(--SLight);
-}
 .button {
   padding: 1.3em 3em;
   font-size: 12px;
@@ -337,20 +373,6 @@ main {
   text-align: center;
 }
 
-.tittle-3 {
-  font-size: 1.5em;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 1.5em;
-}
-.tittle-4 {
-  font-size: 1em;
-  text-align: center;
-  width: 100%;
-  margin-top: 1.5em;
-  font-weight: 500;
-}
-
 #contact {
   display: flex;
   flex-direction: row;
@@ -364,7 +386,7 @@ main {
 
 /* -----footer------- */
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -374,41 +396,33 @@ footer{
   background-color: var(--SDark);
 }
 
-.copyright-text{
+.copyright-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.5em;
-  padding: 1.5em ;
+  padding: 1.5em;
   width: 80%;
-  
 }
 
 /* FIN FOOTER */
 
-/* DESKTOP
- */
+/* DESKTOP*/
 
-@media screen and (min-width: 100px) {
+
+@media screen and (min-width: 1000px) {
+  #nav-container {
+  }
+
   .nav-enlaces {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 1.2em;
   }
 
-  .nav-link {
-    color: var(--TextOn);
-    padding: 1.2em;
-  }
-
-  .nav-link-button {
-    color: var(--TextOn);
-    background-color: var(--SLight);
-    padding: 1em;
-    border-radius: 0.4em;
-    cursor: pointer;
+  .nav__link {
+    padding: 1.5em;
   }
 }
