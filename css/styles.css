@@ -47,7 +47,7 @@ li {
 
 body {
   min-height: 100vh;
-  
+
   background-color: var(--Secondary);
   color: var(--TextOn);
   font-size: 20px;
@@ -104,14 +104,9 @@ body {
 
 /* HEADER */
 
-header {
-  
+#nav-container {
   padding: 1em;
   background-color: var(--Primary);
- 
-}
-
-#nav-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -120,11 +115,11 @@ header {
 
 .nav-enlaces {
   display: none;
-  
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  transition: height 1s linear 0s;
 }
 
 .nav-enlaces-active {
@@ -133,17 +128,18 @@ header {
   display: flex;
 }
 
-.nav__link a{
-  width: 100%;
+.nav__link a {
+  display: block;
+  color: var(--PLight);
+  font-size: 1.8em;
+  padding: 0.9em 0;
+  margin: 0.8em 0;
+  background-color: var(--SLight);
+  border-radius: 0.5em;
 }
 
 .nav__link {
-  color: var(--PLight);
-  font-size: 1.5em;
-  padding: .5em 0;
-  background-color: var(--SDark);
   width: 100%;
-  margin: .8em 0;
 }
 
 .ver {
@@ -421,17 +417,58 @@ footer {
 /* DESKTOP*/
 
 @media screen and (min-width: 1000px) {
+  .menu-hamburger-open,
+  .menu-hamburger-close {
+    display: none;
+  }
+
+  /* HEADER NAV */
+
   #nav-container {
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
   }
 
   .nav-enlaces {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
+    margin-right: 0.8em;
+  }
+
+  .nav__link a {
+    display: flex;
+    font-size: inherit;
+    padding:1em;
+    margin: 0.8em 0;
+    background-color: transparent;
+    border-radius: 0;
+    
+  }
+
+  .nav__link:hover {
+    background-color: var(--SDark);
+    
   }
 
   .nav__link {
-    padding: 1.5em;
+    width: inherit;
+    transition: all 0.2s ease;
   }
+
+  /* fin header nav */
+
+  .tittle-nav {
+    display: flex;
+  }
+
+
+
+  
 }
