@@ -1067,10 +1067,11 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: 43%;
     height: 600px;
     margin: 0;
     gap: 0.5em;
+    text-align: center;
   }
 
   .container-img-skills {
