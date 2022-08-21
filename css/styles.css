@@ -394,10 +394,7 @@ main {
   justify-content: center;
 }
 
-
-
-.container-texts-description {
-  
+#Service .container-texts-description {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -406,13 +403,9 @@ main {
   gap: 1em;
 }
 
-
 #Service .container-texts-description {
-margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
-
-
-
 
 #Service {
   display: flex;
@@ -444,14 +437,11 @@ margin-bottom: 1.5em;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5em;
-  
 }
 
 .content-sliders-img img {
   width: 100%;
 }
-
-
 
 /* fin service */
 
@@ -503,6 +493,25 @@ margin-bottom: 1.5em;
 .proyects a {
   color: var(--TextOnS);
   text-align: center;
+}
+
+.buttons-projects {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1em;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5em;
 }
 
 /*fin projects */
@@ -562,7 +571,6 @@ margin-bottom: 1.5em;
 }
 
 #Skills .soft-Skilss-text {
-  
   width: 100%;
   margin: 0;
   padding: 0;
@@ -688,6 +696,7 @@ margin-bottom: 1.5em;
   width: 17em;
   height: 2em;
   outline: none;
+  color: var(--PLight);
 }
 .textos-formulario {
   color: var(--PLight);
@@ -752,8 +761,8 @@ footer {
     font-weight: 600;
   }
   .tittle-4 {
-    color: var(--TextOnS);
-    font-size: 0.8em;
+    color: var(--PLight);
+    font-size: 1em;
     text-align: center;
     width: 100%;
     margin-top: 1.5em;
@@ -1110,6 +1119,7 @@ footer {
 
   .buttons-projects {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
@@ -1248,6 +1258,8 @@ footer {
   }
   .tipo-dato-contacto {
     font-size: 1em;
+    color: var(--SDark);
+    margin-bottom: 0.5em;
   }
   .dato-contacto {
     font-size: 0.8em;
@@ -1270,10 +1282,16 @@ footer {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #26264b;
-    width: 17em;
+    width: 100%;
     height: 2em;
     outline: none;
+    color: var(--PLight);
   }
+
+  .input::placeholder {
+    color: #bebebe;
+  }
+
   .textos-formulario {
     color: var(--PLight);
   }
