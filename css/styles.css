@@ -418,28 +418,61 @@ main {
   background-color: var(--Primary);
 }
 
-.content-sliders {
-  display: flex;
-  flex-direction: row;
+.container__sl {
+  width: 90%;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  padding: 2em 0;
+}
+
+.slider__container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.slider__body {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  transition: opacity 1.5s;
+}
+
+.slider__body--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.subtitle {
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: var(--SDark);
+}
+
+.slider__review {
+  color: var(--PLight);
+  font-weight: 300;
+  line-height: 1.8em;
+}
+
+.slider__img {
   width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
 }
 
-.content-sliders-img {
-  width: 40%;
-  text-align: center;
-  padding: 1.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5em;
-}
-
-.content-sliders-img img {
+.slider__arrow {
+  cursor: pointer;
   width: 100%;
 }
 
@@ -1057,7 +1090,7 @@ footer {
     width: 100%;
   }
 
-  .content-sliders {
+  /* .content-sliders {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1074,6 +1107,69 @@ footer {
 
   .content-sliders-img img {
     width: 40%;
+  } */
+
+  .container__sl {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+  }
+
+  .slider {
+    padding: 40px 0;
+  }
+
+  .slider__container {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .slider__body {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+  }
+
+  .slider__body--show {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  .slider_text {
+    max-width: 600px;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: var(--SDark);
+  }
+
+  .slider__review {
+    color: var(--PLight);
+    font-weight: 300;
+    line-height: 1.8em;
+  }
+
+  .slider__img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .slider__arrow {
+    cursor: pointer;
+    width: 100%;
   }
 
   /* fin service */

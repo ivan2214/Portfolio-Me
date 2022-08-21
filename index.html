@@ -126,41 +126,69 @@
 
     <section id="Service">
 
-      <div class="header">
+      <section class="header">
 
         <div class="container-texts-description">
           <h2 class="tittle-blanco tittle">Mis</h2>
           <h2 class="tittle-secondary tittle">servicios</h2>
         </div>
 
-      </div>
+      </section>
 
 
-      <div class="content-sliders">
+      <secttion class="slider">
 
-        <!-- <div class="content-sliders-img">
-          <img src="./assets/webDesinig.svg" alt="" />
-          <h2 class="tittle-4 tittle-blanco">Diseño Web </h2>
+        <div class="slider__container container__sl">
+
+          <i id="before" class="fa-solid slider__arrow fa-xl fa-arrow-left"></i>
+
+          <secttion class="slider__body slider__body--show" data-id="1">
+
+            <div class="slider__text">
+              <h2 class="subtitle">Desarrollo web</h2>
+              <p class="slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ex consequuntur
+                architecto beatae dicta doloremque.</p>
+            </div>
+
+            <figure class="slider__picture">
+              <img src="./assets/webDesinig.svg" alt="" class="slider__img" />
+            </figure>
+
+          </secttion>
+
+          <secttion class="slider__body slider__body--show" data-id="2">
+
+            <div class="slider__text">
+              <h2 class="subtitle">Hola mi nobmre es pepe</h2>
+              <p class="slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ex consequuntur
+                architecto beatae dicta doloremque.</p>
+            </div>
+
+            <figure class="slider__picture">
+              <img src="./assets/Web Developer.svg" class="slider__img" alt="" />
+            </figure>
+
+          </secttion>
+
+          <secttion class="slider__body slider__body--show" data-id="3">
+
+            <div class="slider__text">
+              <h2 class="subtitle">Hola mi nobmre es juan</h2>
+              <p class="slider__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ex consequuntur
+                architecto beatae dicta doloremque.</p>
+            </div>
+
+            <figure class="slider__picture">
+              <img src="./assets/webDesinig.svg" class="slider__img" alt="" />
+            </figure>
+
+          </secttion>
+
+
+          <i id="next" class="fa-solid slider__arrow fa-xl fa-arrow-right"></i>
         </div>
 
-        <div class="content-sliders-img">
-          <img src="./assets/Web Developer.svg" alt="" />
-          <h2 class="tittle-4 tittle-blanco"> <i class="fa-solid fa-code fa fa-2xl"></i> Desarrollo Web</h2>
-        </div>
-        <div class="content-sliders-img">
-          <img src="./assets/webDesinig.svg" alt="" />
-          <h2 class="tittle-4 tittle-blanco">Desarrollo Web Responsive</h2>
-        </div>
-
-        <div class="content-sliders-img">
-          <img src="./assets/Web Developer.svg" alt="" />
-          <h2 class="tittle-4 tittle-blanco">Trabajo con Frameworks</h2>
-        </div> -->
-
-
-        
-
-      </div>
+      </secttion>
 
     </section>
 
@@ -280,7 +308,7 @@
           </a>
           <p>Sitio de <strong> Wordpress</strong></p>
           <p>E-comerce sin carrito de compras para poner en practico conocimientos adquiridos en mi carrera
-            <strong>universitaria</strong> haciendo uso de<strong> WordPress</strong> y uso de 
+            <strong>universitaria</strong> haciendo uso de<strong> WordPress</strong> y uso de
             <strong>plugins y plantillas</strong>
           </p>
           <div class="buttons-projects">
@@ -459,7 +487,7 @@
             </div>
           </div>
         </div>
-        <div class="form">
+        <form method="post" action="https://formsubmit.co/bongiovanniivan12@gmail.com" class="form">
           <section class="form-sec">
             <label class="textos-formulario email-formulario " for="name">Nombre</label>
             <input class="input" type="text" id="name" name="nombre" maxlength="50" required class="inputs"
@@ -478,8 +506,8 @@
           </section>
 
           <button class="button enviar">Enviar</button>
-          </form>
-        </div>
+        </form>
+      </div>
       </div>
       </div>
     </section>
@@ -511,6 +539,7 @@
       once: true,
     });
   </script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>
