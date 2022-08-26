@@ -443,7 +443,7 @@ main {
 }
 
 .carrousel .img {
-  width: calc(100% / 3 - 2em);
+  width: calc(100% / 3 - 3em);
   height: 50vh;
   min-height: 10vh;
   transition: all 0.4s ease;
@@ -452,7 +452,6 @@ main {
 
 .carrousel .puntos {
   width: 100%;
-  
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -460,19 +459,17 @@ main {
 }
 
 .carrousel .punto {
-  width: 2.5em;
-  height: 2.5em;
+  width: 3em;
+  height: 1.6em;
   margin: 1em 1em 0;
   transition: all 0.4s ease;
-  border-radius: .5em;
+  border-radius: .3em;
   cursor: pointer;
   background-color: var(--Secondary);
   opacity: .6;
 }
 
-.carrousel .punto.activo {
-  background-color: lightblue;
-}
+
 .carrousel .punto:hover {
   transform: scale(1.5);
 }
@@ -491,7 +488,10 @@ main {
 }
 
 .punto .active {
-  background-color: var(--PDark);
+  background-color:orange;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
 }
 
 /* fin service */
