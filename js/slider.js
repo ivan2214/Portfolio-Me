@@ -1,25 +1,20 @@
-const sliders = [...document.querySelectorAll(".slider__body")];
-const arrowBefore = document.querySelector("#before");
-const arrowNext = document.querySelector("#next");
-let value;
+const grande    = document.querySelector('.grande')
+const puntos = document.querySelectorAll(".punto");
 
-//sume
-arrowNext.addEventListener("click", () => changePosition(1));
-//reste
-arrowBefore.addEventListener("click", () => changePosition(-1));
-
-function changePosition(change) {
-  const currentElement = Number(
-    document.querySelector(".slider__body--show").dataset.id
-  );
-  value = currentElement;
-  value += change;
-
-  console.log(sliders.length);
-  if (value === 0 || value === sliders.length + 1) {
-    value = value === 0 ? sliders.length : 1;
-  }
-
-  sliders[currentElement-1].classList.toggle("slider__body--show");
-  sliders[value - 1].classList.toggle("slider__body--show");
-}
+puntos.forEach((cadaPunto, posicion) => {
+  puntos[posicion].addEventListener("click", () => {
+    let posicionPunto = posicion;
+    //posicion es 0 transformX es 0
+    //posicion es 1 transformX es -100%
+    //posicion es 2 transformX es -200%
+    let operacion = posicionPunto * -33.3;
+    grande.style.transform = `translateX(${operacion}%)`;
+    puntos.forEach((cadaPunto, posicion) => {
+      puntos[posicion].addEventListener("click", () =>{
+        puntos[posicion].classList.remove("active")
+        puntos[posicion].classList.add("active")
+      });
+    });
+    
+  });
+});
