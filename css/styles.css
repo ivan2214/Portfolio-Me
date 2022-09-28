@@ -413,36 +413,30 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 4.5em;
   padding: 5em 0;
   background-color: var(--Primary);
 }
 
 .carrousel {
-  width: 90%;
+  width: 100%;
   max-width: 120em;
-  padding: 2em;
-
   transition: all 0.4s ease;
-  border-radius: 1em;
   overflow: hidden;
 }
+
 .grande {
   width: 300%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.4s ease;
-  border-radius: 1em;
-
   padding: 2em;
   transition: all 0.5s ease;
   transform: translateX(0%);
 }
 
 .carrousel .grande .img {
-  width: calc(100% / 3 - 3em);
+  width: calc(100% / 3 - 2em);
   height: 50vh;
   min-height: 10vh;
   transition: all 0.4s ease;
@@ -451,6 +445,14 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.carrousel .grande .img img {
+  width: 100%;
+}
+
+.carrousel .grande .img h2 {
+  text-align: center;
 }
 
 .carrousel .puntos {
