@@ -453,8 +453,6 @@ main {
   justify-content: center;
 }
 
-
-
 .carrousel .puntos {
   width: 100%;
   display: flex;
@@ -468,12 +466,11 @@ main {
   height: 1.6em;
   margin: 1em 1em 0;
   transition: all 0.4s ease;
-  border-radius: .3em;
+  border-radius: 0.3em;
   cursor: pointer;
   background-color: var(--Secondary);
-  opacity: .6;
+  opacity: 0.6;
 }
-
 
 .carrousel .punto:hover {
   transform: scale(1.5);
@@ -493,7 +490,7 @@ main {
 }
 
 .punto .active {
-  background-color:orange;
+  background-color: orange;
   opacity: 1;
   margin: 0;
   padding: 0;
@@ -875,6 +872,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
   }
 
   .nav-enlaces {
@@ -883,6 +881,9 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin-right: 0.8em;
+    width: 45%;
+    margin: 0;
+    padding: 0;
   }
 
   /* nav link */
@@ -891,7 +892,9 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
   }
 
   .nav__link a:hover {
@@ -1117,7 +1120,7 @@ footer {
     width: 100%;
     max-width: 120em;
     padding: 2em;
-  
+
     transition: all 0.4s ease;
     border-radius: 1em;
     overflow: hidden;
@@ -1128,15 +1131,15 @@ footer {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-  
+
     transition: all 0.4s ease;
     border-radius: 1em;
-  
+
     padding: 2em;
     transition: all 0.5s ease;
     transform: translateX(0%);
   }
-  
+
   .carrousel .grande .img {
     width: calc(100% / 3 - 2em);
     height: 50vh;
@@ -1148,34 +1151,34 @@ footer {
     align-items: center;
     justify-content: space-evenly;
   }
-  
+
   .carrousel .puntos {
     width: 100%;
-    
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
   }
-  
+
   .carrousel .punto {
     width: 2.5em;
     height: 2.5em;
     margin: 1em 1em 0;
     transition: all 0.4s ease;
-    border-radius: .5em;
+    border-radius: 0.5em;
     cursor: pointer;
     background-color: var(--Secondary);
-    opacity: .6;
+    opacity: 0.6;
   }
-  
+
   .carrousel .punto.activo {
     background-color: lightblue;
   }
   .carrousel .punto:hover {
     transform: scale(1.5);
   }
-  
+
   .punto-1:hover {
     background: url("../assets/svgs web/Web Developer.svg") no-repeat center;
     background-size: cover;
@@ -1188,7 +1191,7 @@ footer {
     background: url("../assets/svgs web/Web Developer.svg") no-repeat center;
     background-size: cover;
   }
-  
+
   .punto .active {
     background-color: var(--PDark);
   }
