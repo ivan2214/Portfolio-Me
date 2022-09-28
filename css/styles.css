@@ -1230,6 +1230,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 34%;
+    max-height: 90vh;
   }
 
   .img-projects {
