@@ -433,7 +433,6 @@ main {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-
   transition: all 0.4s ease;
   border-radius: 1em;
 
@@ -442,13 +441,19 @@ main {
   transform: translateX(0%);
 }
 
-.carrousel .img {
+.carrousel .grande .img {
   width: calc(100% / 3 - 3em);
   height: 50vh;
   min-height: 10vh;
   transition: all 0.4s ease;
   border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 .carrousel .puntos {
   width: 100%;
@@ -1109,7 +1114,7 @@ footer {
   }
 
   .carrousel {
-    width: 90%;
+    width: 100%;
     max-width: 120em;
     padding: 2em;
   
@@ -1132,12 +1137,16 @@ footer {
     transform: translateX(0%);
   }
   
-  .carrousel .img {
+  .carrousel .grande .img {
     width: calc(100% / 3 - 2em);
     height: 50vh;
     min-height: 10vh;
     transition: all 0.4s ease;
     border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
   
   .carrousel .puntos {

@@ -69,7 +69,7 @@
         </section>
 
         <section class="buttons">
-          <a href="./cv/CV_2022-08-11-100809.pdf" download="CV IvanBongiovanni" data-aos="fade-right"
+          <a href="../Curriculum/Cv-Ivan-Bongiovanni.pdf.pdf" download="CV IvanBongiovanni" data-aos="fade-right"
             class="button">Download CV</a>
         </section>
 
@@ -139,10 +139,19 @@
       <secttion class="carrousel">
 
         <div class="grande">
-          <img src="assets/svgs web/Web Developer.svg" alt="Imagen 1" class="img">
-          <img src="assets/svgs web/webDesinig.svg" alt="Imagen 2" class="img">
-          <img src="assets/svgs web/Web Developer.svg" alt="Imagen 2" class="img">
-      </div>
+          <figure class="img">
+            <img src="assets/svgs web/Web Developer.svg" alt="Imagen 1" class="img">
+            <h2 class="tittle-blanco tittlee">Web Developer</h2>
+          </figure>
+          <figure class="img">
+            <img src="assets/svgs web/webDesinig.svg" alt="Imagen 2" class="img">
+            <h2 class="tittle-blanco tittlee">Web design</h2>
+          </figure>
+          <figure class="img">
+            <img src="assets/svgs web/Web Developer.svg" alt="Imagen 2" class="img">
+            <h2 class="tittle-blanco tittlee">Design Responsive</h2>
+          </figure>
+        </div>
 
         <ul class="puntos">
           <li class="punto active punto-1"></li>
@@ -163,6 +172,38 @@
         </h2>
       </div>
       <div class="container">
+
+        <article class="proyects">
+          <a href="https://rick-and-morty-ivan.netlify.app/" target="_blank">
+            <img src="./assets/proyectos/ricky.png" class="img-projects" alt="">
+          </a>
+          <p>App<strong>Rick AND Morty</strong></p>
+          <p>Proyecto realizado con <strong>React</strong> en donde hago uso de una <strong>API</strong> poder realizar
+            esta sencilla app que mas que nada es una practica del manejo de las apis, la app fue estilizada con
+            chakraIu y falta por terminarla.</p>
+          <div class="buttons-projects">
+            <a href="https://github.com/ivan2214/RickAndMorty-Api-Practica-con-React-" target="_blank" class="button button-container"><i
+                class="fa-brands fa-2xl fa-github"></i> Github</a>
+            <a href="https://rick-and-morty-ivan.netlify.app/" target="_blank" class="button button-container"><i
+                class="fa-brands fa-2xl fa-chrome"></i> Sitio</a>
+          </div>
+        </article>
+
+        <article class="proyects">
+          <a href="https://tareas-ivan.netlify.app/" target="_blank">
+            <img src="./assets/proyectos/Todolist.png" class="img-projects" alt="">
+          </a>
+          <p>Todo<strong>List</strong></p>
+          <p>Proyecto realizado con <strong>React</strong> en donde hago uso de sus <strong>Hooks y Props</strong> para poder realizar
+            esta sencilla lista de tareas, la app fue estilizada con
+            chakraIu</p>
+          <div class="buttons-projects">
+            <a href="https://github.com/ivan2214/Todo-List" target="_blank" class="button button-container"><i
+                class="fa-brands fa-2xl fa-github"></i> Github</a>
+            <a href="https://tareas-ivan.netlify.app/" target="_blank" class="button button-container"><i
+                class="fa-brands fa-2xl fa-chrome"></i> Sitio</a>
+          </div>
+        </article>
 
         <article class="proyects">
           <a href="https://misiones-space-x.netlify.app/" target="_blank">
@@ -497,8 +538,7 @@
   <script>
     AOS.init({
       duration: 1000,
-      easing: 'ease',
-      once: true,
+
     });
   </script>
   <script src="./js/slider.js"></script>
