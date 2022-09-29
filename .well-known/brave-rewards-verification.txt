@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ivanbongiovanni.netlify.app
+Token: d5af387ef0e080bbc23423a0f3870bb8cd210b4a153fc086df15b431180da267
